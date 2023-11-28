@@ -6,20 +6,21 @@
 
 }
 
-.button-1 button, .button-2 button, .form-popup button {
+.button-1 button,
+.button-2 button,
+.form-popup button {
     appearance: none;
     background-color: transparent;
-    border: 1px solid rgb(63,54,139);
+    border: 1px solid rgb(63, 54, 139);
     border-radius: 15px;
     box-sizing: border-box;
-    color: rgb(63,54,139);
+    color: rgb(63, 54, 139);
     cursor: pointer;
     display: inline-block;
     font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-size: 16px;
     font-weight: 600;
     line-height: normal;
-    
     margin: 0;
     min-height: 40px;
     min-width: 0;
@@ -35,14 +36,18 @@
     will-change: transform;
 }
 
-.button-1 button:disabled, .button-2 button:disabled, .form-popup button:disabled {
+.button-1 button:disabled,
+.button-2 button:disabled,
+.form-popup button:disabled {
     pointer-events: none;
 }
 
-.button-1 button:hover, .button-2 button:hover, .form-popup button:hover {
+.button-1 button:hover,
+.button-2 button:hover,
+.form-popup button:hover {
     color: #fff;
-    background: linear-gradient(90deg, rgba(63,54,139,1) 35%, rgba(76,124,172,1) 75%, rgba(76,167,180,1) 100%);
-    box-shadow: rgb(63,54,139) 0 8px 15px;
+    background: linear-gradient(90deg, rgba(63, 54, 139, 1) 35%, rgba(76, 124, 172, 1) 75%, rgba(76, 167, 180, 1) 100%);
+    box-shadow: rgb(63, 54, 139) 0 8px 15px;
     transform: translateY(-2px);
 }
 
@@ -215,7 +220,7 @@ body {
 .bar3 {
     width: 25px;
     height: 5px;
-    background: linear-gradient(90deg, rgba(63,54,139,1) 35%, rgba(76,124,172,1) 75%, rgba(76,167,180,1) 100%);
+    background: linear-gradient(90deg, rgba(63, 54, 139, 1) 35%, rgba(76, 124, 172, 1) 75%, rgba(76, 167, 180, 1) 100%);
     margin: 3px 0;
     transition: 0.4s;
 }
@@ -305,9 +310,9 @@ body {
     max-width: 300px;
     padding: 10px;
     background-color: white;
-    border: 1px solid rgb(63,54,139);
+    border: 1px solid rgb(63, 54, 139);
     border-radius: 15px;
-    color: rgb(63,54,139);
+    color: rgb(63, 54, 139);
 }
 
 .form-container input[type=text],
@@ -315,7 +320,7 @@ body {
     width: 100%;
     padding: 15px;
     margin: 5px 0 22px 0;
-    border: 1px solid rgb(63,54,139);
+    border: 1px solid rgb(63, 54, 139);
     border-radius: 15px;
     background: #f1f1f1;
 }
