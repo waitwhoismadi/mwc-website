@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MWC PAGE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="action.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <div id="mySidebar" class="sidebar">
+        <div class="sidebar-header">
+            <span class="close-btn" onclick="closeNav()">&times;</span>
+        </div>
+        <a href="#">Компания</a>
+        <a href="#">Проекты</a>
+        <a href="#">Квартиры</a>
+        <a href="#">Коммерция</a>
+        <a href="#">Способы покупки</a>
+        <a href="#">Программа лояльности</a>
+    </div>
+
+    <nav class="navbar">
+        <div class="burger-menu" onclick="openNav()">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <div class="button-1">
+            <a href="https://www.moydom-mwc.kz/projects/"><button>Другие проекты</button></a>
+        </div>
+        <div class="logo">
+            <img src="images/logos/mwclogo.PNG" alt="Logo">
+        </div>
+        <div class="button-2">
+            <button onclick="openForm()">Связаться с нами</button>
+        </div>
+        <div class="phone-section">
+            <div class="phone-icon">
+                <a href="tel:314">
+                    <i class="fa fa-phone"></i>
+                </a>
+            </div>
+            <div class="phone-number">
+                <a href="tel:314">
+                    <p>314 <br>Call-center</p>
+                </a>
+            </div>
+        </div>
+        
+        
+        <!-- <div class="button-3">
+            <button><i class="fa fa-phone" style="font-size:20px"></i></button>
+        </div> -->
+    </nav>
+
+    <div class="columns">
+        <div class="column column1">
+            <div class="column-logo">
+                <img src="images/logos/altyn-logo.png" alt="logo">
+            </div>
+            <h2 class="column-title">Altyn Saulet</h2>
+            <div class="column-overlay">
+                <div class="buttons">
+                    <a href="https://moydom-mwc.kz/projects/zhk-altyn-saulet/"><button>О проекте</button></a>
+                    <a href="https://moydom-mwc.kz/3d/altyn-saulet/#pano594152/98.5/17.9/60.0"><button>3D панорама</button></a>
+                    <a href="https://moydom-mwc.kz/planirovki/"><button>Шахматка</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="column column2">
+            <div class="column-logo">
+                <img src="images/logos/dastur-logo.png" alt="logo">
+            </div>
+            <h2 class="column-title">Dastur</h2>
+            <div class="column-overlay">
+                <div class="buttons">
+                    <a href="https://moydom-mwc.kz/projects/zhk-dastur/"><button>О проекте</button></a>
+                    <a href="https://moydom-mwc.kz/3d/dastur/#pano594138/-71.4/18.3/65.0"><button>3D панорама</button></a>
+                    <a href="https://moydom-mwc.kz/planirovki/"><button>Шахматка</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="column column3">
+            <div class="column-logo">
+                <img src="images/logos/bj-logo.png" alt="logo">
+            </div>
+            <h2 class="column-title">Buqar Jyrau Exclusive</h2>
+            <div class="column-overlay">
+                <div class="buttons">
+                    <a href="https://moydom-mwc.kz/projects/zhk-buqar-jyrau-6/"><button>О проекте</button></a>
+                    <a href="https://moydom-mwc.kz/3d/buqar-jyrau/#pano593975/13.9/54.9/90.0"><button>3D панорама</button></a>
+                    <a href="https://moydom-mwc.kz/planirovki/"><button>Шахматка</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="column column4">
+            <div class="column-logo">
+                <img src="images/logos/mwclogo.png" alt="logo">
+            </div>
+            <h2 class="column-title">Партнерская программа</h2>
+            <div class="column-overlay">
+                <div class="buttons">
+                    <button>О проекте</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-popup-overlay" id="formOverlay"></div>
+
+    <div class="form-popup" id="myForm">
+        <form action="" class="form-container">
+            <h1>Оставьте заявку</h1>
+
+            <label for="email">Ваше имя</label>
+            <input type="text" placeholder="Имя" name="email" required>
+
+            <label for="psw">Номер телефона</label>
+            <input type="tel" placeholder="+7 (___) ___ __ __" name="psw" required>
+
+            <button type="submit" class="btn">Оставить заявку</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
