@@ -1,0 +1,586 @@
+@charset "utf-8";
+@font-face{
+  font-family: "ubun";
+  src: url(https://gpark.kz/rus/gpark-club/blue/../ubuntu.woff) format('truetype'); font-display: swap;
+}
+@font-face{
+  font-family: "ubunbold";
+  src: url(https://gpark.kz/rus/gpark-club/blue/../ubuntubold.woff) format('truetype'); font-display: swap;
+}
+@font-face{
+  font-family: "ubunmed";
+  src: url(https://gpark.kz/rus/gpark-club/blue/../ubuntumedium.woff) format('truetype'); font-display: swap;
+}
+li.item-117{}
+.pagename{
+  font-family: "Lora";
+  font-weight: bold;
+  font-size: 42px;
+  color: #3a3a3a;
+  position: relative;
+}
+.pagename:after{
+  content: "";
+  position: absolute;
+  top: 65px;
+  left: 0;
+  border-bottom: 2px solid #006697;
+  width: 50px;
+  height: 2px;
+}
+.kino{
+  position: relative;
+  margin-top: 45px;
+  border-top: 2px solid #E5E5E5;
+}
+.player{
+  margin-top: 50px;
+}
+.tabs>section{display: none;}
+.tabs>section>p{margin: 0 0 5px;}
+.tabs>input{display: none; position: absolute;}
+.tabs>label{
+  display: inline-block;
+  padding: 15px 0px;
+  width: 210px;
+  text-align: center;
+  border: 1px solid #006697;
+  margin-bottom: 0;
+  font-family: "ubuntu";
+  font-size: 18px;
+  font-weight: normal;
+  color: #006697;
+}
+label.lbl{margin-left: -4px;}
+.tabs>input:checked+label{
+  background: #006697;
+  color: #fff;
+}
+#tab1:checked~#content-tab1,
+#tab2:checked~#content-tab2, 
+#tab3:checked~#content-tab3, 
+#tab4:checked~#content-tab4{display: block;}
+.playcover{position: relative;}
+.playbutton{
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  z-index: 999;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.playcover:after{
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 1;
+  background: #4a4a4a;
+  opacity: 0.3;
+}
+.movie{background: none; border: none;} button:focus{outline: none;}
+.movieinfo{
+  display: flex;
+  font-size: 18px;
+  margin-top: 50px;
+}
+.inform{
+  display: flex;
+  width: 38%;
+  border-right: 2px solid #e5e5e5;
+  margin-right: 30px;
+  line-height: 211%;
+}
+.filmdate{
+  display: flex;
+  flex-direction: column;
+  color: #006687;
+  font-family: "ubunmed";
+}
+.filminfo{
+  display: flex;
+  flex-direction: column;
+  margin-left: 70px;
+}
+.plot{
+  width: 60%;
+  font-family: "ubuntu";
+  line-height: 183%;
+}
+.numbers{
+  display: flex;
+  border-top: 1px solid #e5e5e5;
+  padding-top: 30px;
+  position: relative;
+}
+.view{margin-top: 70px;}
+.viewneed{
+  font-family: "ubunmed";
+  font-size: 30px;
+  line-height: 34px;
+  position: relative;
+  margin-bottom: 85px;
+}
+.num {font-family: "ubuntu"; text-align: center; padding: 0px 20px; width: 30%;}
+.num span{font-family: "ubunbold"; color: #006697;}
+.num p{padding-top: 5px;}
+.cifra{
+  font-family: "ubunbold";
+  color: #fff;
+  background: #006697;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -21px;
+  margin-left: -20px;
+}
+.viewneed:after{
+  content: "";
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  border-bottom: 2px solid #006687;
+}
+.perspage{
+  display: flex;
+  background: rgba(229, 229, 229, 0.3);
+  padding: 30px;
+  position: relative;
+  margin-top: 30px;
+}
+.otzv{display: flex; justify-content: space-between; margin-top: 40px;}
+button.otz{
+  width: 215px;
+  height: 45px;
+  background: none;
+  border: 1px solid #006687;
+  border-radius: 3px;
+  font-family: "ubunmed";
+  text-transform: uppercase;
+  color: #006687;
+}
+.persinf{
+  line-height: 21px;
+  width: 78%;
+  margin-left: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.otzv .viewneed{margin-bottom: 30px;}
+.persname{font-family: "ubunbold";position: relative;}
+.persname:after{
+  content: "";
+  position: absolute;
+  top: 24px;
+  left: 0;
+  width: 50px;
+  height: 1px;
+  border-bottom: 1px solid #006687;
+}
+.napisal{margin-top: 15px;}
+.otvet {position: absolute;right: 60px;top: 45px;}
+button.backcall{
+  background: none;
+  border: none;
+  font-family: "ubunbold";
+  color: #006687;
+  font-size: 16px;
+}
+button.otz:hover{transition: .3s linear; color: #fff; background: #006687;}
+.mynewmodal .modal-header{border-bottom: 0; text-align: center; font-size: 18px;}
+.mynewmodal input.form-control {
+  border: none;
+  background: none;
+  box-shadow: none;
+  border-bottom: 1px solid #006697;
+  border-radius: 0;
+}
+.mynewmodal input[type="text"] {
+  width: 100%;
+  border: none;
+  padding-left: 10px;
+  border-bottom: 1px solid #006697;
+  padding-bottom: 5px;
+}
+.mynewmodal input.form-control.btn-orange {
+  margin-top: 40px;
+  border: 1px solid #006697;
+  height: 50px;
+  border-radius: 5px;
+  color: #006697;
+  font-family: "ubunmed";
+  font-size: 16px;
+}
+.mynewmodal .modal-content{padding: 20px;}
+.vawi {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 65px;
+  margin-bottom: 50px;
+}
+.wav {font-family: "ubunmed";font-size: 30px;position: relative;}
+.wav:after {content: "";position: absolute;top: 45px;left: 0;width: 50px;border-bottom: 2px solid #006697;}
+button.butleg {
+  background: none;
+  border: 1px solid #006697;
+  padding: 10px 30px;
+  border-radius: 3px;
+  font-family: "ubunmed";
+  font-size: 15px;
+  color: #006697;
+  text-transform: uppercase;
+}
+#jc h4{display: none;}
+div#comments-list-footer{display: none;}
+.comments-buttons a{display: none;}
+div#comments-footer{display: none;}
+#comments .comments-list{margin-left: 0!important;}
+.comment-anchor{display: none;}
+#comments .comment-date{background: none!important; font-size: 14px; margin-left: 40px;}
+div#comment-body-4 {
+  font-size: 16px!important;
+  color: #212529!important;
+  font-family: "ubuntu"!important;
+  padding-top: 20px!Important;
+}
+#jc .rbox{
+  padding: 20px 35px!important;
+  border-radius: 0!important;
+  background: rgba(229, 229, 229, 0.3);
+  border: none!important;
+}
+#jc .rbox div{margin-top: 25px; font-family: "ubuntu"; font-size: 16px; line-height: 18px;}
+span.comment-author{position: relative;}
+span.comment-author:after{
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: 0;
+  width: 50px;
+  border-bottom: 2px solid #006697;
+}
+span.comments-vote{display: none;}
+#comments-form p, #comments-form #comments-form-buttons, #comments-form #comments-form-error, #comments-form #comments-form-captcha-holder{margin-left: 0!important;}
+#jc .modal-dialog{width: 500px;}
+input#comments-form-name {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #006697;
+  padding-bottom: 10px!important;
+}
+input#comments-form-email {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #006697;
+  padding-bottom: 10px!important;
+  margin-top: 20px;
+}
+.smiles{display: none;}
+textarea#comments-form-comment {
+  width: 100%;
+  max-width: 100%!important;
+  height: 70px;
+  margin-top: 20px;
+  border: none;
+  border: 1px solid #006697!important;
+}
+#comments-form .grippie{display: none;}
+input#comments-form-subscribe {display: none;}
+img#comments-form-captcha-image{width: 50%; border: 1px solid #006697!important;}
+input#comments-form-captcha {width: 50%!important;}
+div#comments-form-buttons {
+  width: 100%;
+  height: 50px;
+}
+
+div#comments-form-send {
+  width: 100%;
+  border: 1px solid #006697;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background: none!important;
+}
+#comments-form .btn, #comments-report-form .btn{background: none!important;}
+#comments-form .btn a, #comments-report-form .btn a{font-family: "ubuntu"; font-size: 16px; color: #006697;}
+.modalreg .modal-dialog{width: 500px;}
+.regbutton {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+button.registration {
+  width: 40%;
+  font-family: "ubuntu";
+  color: #fff;
+  background: #006697;
+  border: none;
+  height: 50px;
+  border-radius: 3px;
+}
+.reginfo {
+  font-family: "ubuntu";
+  font-size: 16px;
+  text-align: center;
+  padding: 10px 30px;
+}
+
+
+#comments-form .btn div, #comments-report-form .btn div{background: none!Important;}
+.roles{display: flex; margin-top: 30px;}
+.mainroles{width: 40%;}
+.rls{font-family: "ubunbold"; font-size: 20px; color: #006697; margin-bottom: 20px;}
+.mainroles p{font-family: "ubuntu"; font-size: 18px;}
+.episode p{font-family: "ubuntu"; font-size: 18px;}
+.crit{display: flex; margin-bottom: 10px;}
+.crit span{
+  width: 42%;
+  font-family: "ubunmed";
+  color: #006697;
+}
+.criteries{
+  width: 39%;
+  border-right: 2px solid #e5e5e5;
+  margin-right: 30px;
+}
+.episode{width: 50%;}
+.parts{display: flex;} .part1{width: 63%;}
+.filname {
+  position: relative;
+  font-family: "ubunmed";
+  margin-bottom: 20px;
+}
+.filname:after {content: "";position: absolute;top: 35px;left: 0;width: 50px;border-bottom: 2px solid #006697;}
+input:focus{outline: none;}
+.modal-body p.reggg {font-family: "ubunmed";font-size: 18px;margin-bottom: 20px;}
+.form-control.btn-orange:hover {
+  transition: .3s;
+  background: #fff;
+  color: #006697;
+}
+
+.uslov{font-family: "ubuntu"!important; font-size: 14px; color: #000; font-weight: normal;}
+.check{display: flex; margin-top: 10px;}
+button.close{position: relative; z-index: 999;}
+.posclose {
+  position: fixed;
+  right: 10px;
+  top: 10px;
+  z-index: 999;
+}
+.registname {
+  width: 100%;
+  border: none;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #006697;
+  padding-left: 10px;
+}
+.check input#checkbox2 + label{position: relative; margin-left: 15px;}
+.check input#checkbox2 + label:before{
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 0px;
+  left: -28px;
+  border: 1px solid #006697;
+  background: #ffffff;
+}
+.check input#checkbox2 + label:after{
+  content: "";
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  top: 3px;
+  left: -25px;
+  background: #006697; 
+  opacity: 0;
+}
+.check input#checkbox2:checked ~ label::after{opacity: 1;}
+.rega .modal-body{padding: 30px;}
+.rega .modal-dialog{width: 500px;}
+.form-control.btn-orange {
+  margin-top: 20px;
+  height: 50px;
+  border: 1px solid #006697;
+  color: #fff;
+  font-size: 16px;
+  background: #006697;
+}
+.check a {font-family: "ubuntu";font-size: 14px;font-weight: normal;}
+.thanks p {
+  padding-bottom: 20px;
+  font-size: 18px;
+}
+.thanks a {
+  height: 50px;
+  width: 200px;
+  border: 1px solid #006697;
+  font-size: 16px;
+  font-family: "ubunmed";
+  color: #fff;
+  background: #006697;
+}
+.thanks a:hover {
+  transition: .3s;
+  text-decoration: none;
+  color: #006697;
+  background: #fff;
+}
+.thanks a {
+  height: 50px;
+  width: 200px;
+  border: 1px solid #006697;
+  font-size: 16px;
+  font-family: "ubunmed";
+  color: #fff;
+  background: #006697;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.thanks a:hover {
+  transition: .3s;
+  text-decoration: none;
+  color: #006697;
+  background: #fff;
+}
+.modal{
+  position: fixed;
+  top: 50%;
+  transform: translate(0, -50%);
+  bottom: auto;
+}
+a:focus{outline: none;}
+button:focus{outline: none;}
+.uchastie {
+  font-size: 18px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.pereiti {margin-top: 20px;}
+.pereiti a {
+  border: 1px solid #006697;
+  padding: 12px 50px;
+  color: #006697;
+  margin-right: 5px;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+button.closemodal {
+  font-size: 16px;
+  font-weight: 500;
+  border: 1px solid #006697;
+  padding: 10px 50px;
+  text-transform: uppercase;
+  background: #006697;
+  color: #fff;
+}
+.closemodal:hover{transition: .3s; color: #006697; background: #fff;}
+.pereiti a:hover{transition: .3s; color: #fff; background: #006697; text-decoration: none;}
+ul.nav.menu li.item-117 a:hover {
+  border: none;
+  transform: scale(1.1);
+  transition: .3s;
+}
+ul.nav.menu li.item-117 a:before {border-bottom: 3px solid #006697;content: "";position: absolute;top: 0;left: 0;width: 100%;z-index: 9999;}
+ul.nav.menu li.item-117 a:after {
+  border-bottom: 3px solid #006697;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 9999;
+}
+ul.nav.menu li.item-117 a{font-weight: bold;}
+.playcover img{width: 100%; object-fit: cover; height: 550px; object-position: bottom;}
+.reg .reginfo{padding: 10px 0px;}
+li.item-164{display: none;}
+.menufoot ul.nav.menu li.item-117 a:after{opacity: 0;}
+.menufoot ul.nav.menu li.item-117 a:before{opacity: 0;}
+.instruction{margin-top: 50px; width: 270px;}
+.instruction a{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  border: 1px solid #006697;
+  background: #006697;
+  border-radius: 3px;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px;
+}
+.instruction .fancy div{
+  padding-right: 0px;
+  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.instruction .fancy svg path{fill: #fff;}
+.instruction a:hover{transition: .3s; color: #006697; background: #fff; text-decoration: none;}
+.instruction a:hover > svg path{fill: #006697; transition: .3s;}
+
+
+@media screen and (max-width: 480px){
+  .pagename{font-size: 30px;}
+  .pagename:after{top: 45px;}
+  label.lbl{margin-left: 0;}
+  .tabs>label{width: 100%;}
+  button.movie svg{width: 80px;}
+  .movieinfo{display: block;}
+  .criteries{width: 100%; border-right: 0;}
+  .plot{width: 100%; margin-top: 30px;}
+  .roles{display: block;}
+  .mainroles, .episode{width: 100%;}
+  .viewneed{font-size: 26px;}
+  .num{width: 100%;}
+  .cifra{display: none;}
+  .numbers{display: block;}
+  .wav{font-size: 22px;}
+  #jc .modal-dialog{width: 95%;}
+  .rega .modal-dialog{width: 95%;}
+  .movieinfo{font-size: 16px;}
+  .mainroles p{font-size: 16px;}
+  .rls{font-size: 18px;}
+  .episode p{font-size: 16px;}
+  .mainroles, .episode{text-align: center;}
+  .episode{margin-top: 20px;}
+  .num{font-size: 16px; padding: 5px 10px;}
+  .parts{display: block;}
+  .part1{width: 100%;}
+  .check input#checkbox2 + label{margin-left: 10px;}
+  .playcover img{height: auto;}
+  .pereiti{display: flex; flex-direction: column;}
+  .pereiti a{width: 100%;}
+  button.closemodal{margin-top: 10px;}
+  li.item-117{margin-top: 20px;}
+  .zvonok form#first2{width: 100%;}
+  .zvonok{margin-top: 5px;}
+  .callc{width: 15%;}
+  .instruction{width: 100%;}
+}
+@media screen and (max-width: 375px){
+  #comments .comment-date{font-size: 11px;}
+  .wav{font-size: 18px;}
+  .wav:after{top: 30px;}
+  button.butleg{font-size: 14px;}
+  .viewneed{font-size: 22px; margin-bottom: 30px;}
+  .parts{display: block;} .part1{width: 100%;}
+  .reginfo{font-size: 14px; padding: 10px 0px;}
+}
