@@ -2815,6 +2815,43 @@ li.item-168:before {
     border-radius: 25px;
 }
 
+@media screen and (max-width: 768px) {
+    .club.casa-club {
+      display: block; /* Revert to block display for mobile view */
+    }
+  
+    .col-md-6 {
+      width: 100%; /* Full width for columns in mobile view */
+      padding: 0 15px; /* Adjust padding */
+      margin-bottom: 20px; /* Add some bottom margin for separation */
+    }
+  
+    .textclub {
+      padding: 0 15px; /* Adjust text content padding */
+    }
+  
+    .fotkaeee {
+      width: 100%; /* Full width for the image container */
+      padding: 0; /* Remove padding */
+      position: relative;
+      overflow: hidden;
+      border-radius: 25px;
+    }
+  
+    .fotkaeee .svegggg {
+      width: 100%; /* Full width for the image */
+      height: auto; /* Allow image to scale proportionally */
+      max-height: 180px; /* Set a maximum height for the image */
+      object-fit: contain; /* Maintain image proportions */
+      border-radius: 25px;
+      position: relative;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  
+
 .fotkaeee.light:before {
     content: "";
     background: #ffffff;
