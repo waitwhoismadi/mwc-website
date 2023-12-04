@@ -1975,6 +1975,8 @@ span.percen {
     transform: translate(-53%, -50%);
     width: auto;
     max-height: 300px;
+    border-radius: 25px;
+    padding: 15px;
 }
 
 .club {
