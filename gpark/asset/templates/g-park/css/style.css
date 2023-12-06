@@ -1895,7 +1895,6 @@ ul.small a {
 }
 
 body.internal-page [itemprop="articleBody"] {
-    min-height: 50vh
 }
 
 span.percen {
@@ -2788,20 +2787,20 @@ li.item-168:before {
 }
 
 .club.casa-club {
-    display: flex; /* Use flexbox for layout */
-    align-items: center; /* Align items vertically */
-    justify-content: space-between; /* Distribute space between items */
-    max-width: 1200px; /* Adjust the maximum width of the container */
-    margin: 0; /* Center the container horizontally */
-    padding: 15px; /* Add some padding for spacing */
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    max-width: 1200px; 
+    margin: 0; 
+    padding: 15px; 
 }
 
 .col-md-6 {
-    flex: 0 0 48%; /* Adjust the width of the columns */
+    flex: 0 0 48%; 
 }
 
 .textclub {
-    padding: 0 20px; /* Add padding to text content */
+    padding: 0 20px; 
 }
 
 .fotkaeee {
